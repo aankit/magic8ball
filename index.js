@@ -46,7 +46,7 @@ function handleStart(evt) {
   var scalar = 15;
   var midX = ctx.canvas.width/2;
 
-  var line_height = ctx.canvas.height*0.15;
+  var line_height = ctx.canvas.height*0.10;
   // var triA = 
   // var triB = 
   // var triC = 
@@ -60,7 +60,6 @@ function handleStart(evt) {
   var midY = ctx.canvas.height/2 - (answer_lines.length*30);
   ctx.textAlign = "center";
   for(var i=0; i<answer_lines.length; i++){
-    console.log("here");
     ctx.fillText(answer_lines[i], midX, midY+(i*line_height));
 
   }
