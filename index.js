@@ -56,7 +56,7 @@ function handleStart(evt) {
   ctx.fillStyle = "white";
   ctx.font = "15vw Helvetica";
   var answer = predictions[Math.floor(Math.random() * predictions.length)];
-  var answer_lines = getLines(ctx, answer, canvas.width);
+  var answer_lines = getLines(ctx, answer, canvas.width-20);
   var midY = ctx.canvas.height/2 - (answer_lines.length*30);
   ctx.textAlign = "center";
   for(var i=0; i<answer_lines.length; i++){
